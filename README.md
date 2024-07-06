@@ -3,7 +3,7 @@
 ## 1. Create a SBM model which generates a network with _(K, s, Pij)_ parameters.
 ## 2. Write a function which calculates the likelihood for any network given by the set of parameters _(K, s, Pij)_
 ## 3. We will try to inference back the parameters with which we created the network.
-## 4. Do the simulated annealing, several time for a given _K_. The elementary step is that for fixed _K_ we move a node from a block _i_ to block _j_. If the likelihood increases accept the new configuration otherwise accept it with probability 𝑝=exp(−(log(𝐿𝑜𝑙𝑑)−log(𝐿𝑛𝑒𝑤))/𝑇)
+## 4. Do the simulated annealing, several time for a given _K_. The elementary step is that for fixed _K_ we move a node from a block _i_ to block _j_. If the likelihood increases accept the new configuration otherwise accept it with probability _p_=exp(−(log(_Lold_)−log(_Lnew_))/_T_)
 
 ![image](https://github.com/eva-vision/Stochastic-Block-Model-Inference-Graphs/assets/52841811/78d969ff-408b-4d85-ab85-dfb7b067ee6d)
 Figure 1: Simulated Annealing
